@@ -1,0 +1,25 @@
+version: '3.1'
+
+services:
+  db:
+    # The docker image for mysql will be downloaded
+    image: mysql
+    # The name of the container
+    container_name: mysql_db_telescope
+    # The container will always start on docker daemon startup
+    restart: always
+
+    environment:
+      # The name of DB
+      MYSQL_DATABASE: 'telescope'
+      # Allow the container to be started with a blank password for the root user
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+
+    # Map db files from the image to the OS data folder for data persistence
+    volumes:
+      - ./db-data:/var/lib/mysql
+
+    # Expose MySQL port from container to 33007 port on OS
+    # (feel free to use whatever port you want on OS)
+    ports:
+      - 0.0.0.0:33007:3306

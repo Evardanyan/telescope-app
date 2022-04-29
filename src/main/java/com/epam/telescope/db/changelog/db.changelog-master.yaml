@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - include:
+      file: changes/2022-04-25-create-skill-table.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/2022-04-26-create-general_info-table.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/2022-04-26-create-personal_info-address-child-tables.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/2022-04-26-create-profile-table.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/2022-04-26-create-education-table.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/2022-04-26-create-training_course-table.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/2022-04-26-create-project-table.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/2022-04-26-create-project-profile-association-table.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/2022-04-26-create-past_project-table.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/2022-04-27-create-email_confirmation_token-table.sql
+      relativeToChangelogFile: true
+
+

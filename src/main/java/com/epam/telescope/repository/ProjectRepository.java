@@ -1,0 +1,9 @@
+package com.epam.telescope.repository;
+
+import com.epam.telescope.model.Project;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ProjectRepository extends JpaRepository<Project, Long> {
+}
